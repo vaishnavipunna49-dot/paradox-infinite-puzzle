@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARADOX — Infinite Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="grid-bg"></div>
+        <div class="glow glow1"></div>
+        <div class="glow glow2"></div>
+
+        <div class="stars-bg">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+
+    <!-- ================= HOME ================= -->
+
+    <section id="homeScreen" class="screen active">
+
+        <div class="logo">
+            <span>PARA</span><span>DOX</span>
+        </div>
+
+        <p class="subtitle">
+            THE PUZZLE THAT NEVER ENDS
+        </p>
+
+        <div class="infinite-badge">
+            ♾ INFINITE LEVELS
+        </div>
+
+        <div class="home-card">
+
+            <button id="playButton" class="main-button">
+                ▶ PLAY
+            </button>
+
+            <button id="levelsButton" class="secondary-button">
+                LEVEL MAP
+            </button>
+
+        </div>
+
+        <p class="hint">
+            EVERY LEVEL CHANGES THE PARADOX
+        </p>
+
+        <p class="version">
+            SYSTEM // INFINITE MODE
+        </p>
+
+    </section>
+
+
+    <!-- ================= LEVEL MAP ================= -->
+
+    <section id="levelScreen" class="screen">
+
+        <div class="top-bar">
+
+            <button id="backButton" class="small-button">
+                ← BACK
+            </button>
+
+            <div class="map-title">
+                <h2>LEVEL MAP</h2>
+                <p>INFINITE PUZZLE SYSTEM</p>
+            </div>
+
+            <div class="progress-text" id="progressText">
+                ♾ INFINITE
+            </div>
+
+        </div>
+
+        <div id="levelGrid" class="level-grid"></div>
+
+        <button id="loadMoreButton" class="load-more">
+            + LOAD MORE LEVELS
+        </button>
+
+    </section>
+
+
+    <!-- ================= GAME ================= -->
+
+    <section id="gameScreen" class="screen">
+
+        <div class="game-top">
+
+            <button id="gameHomeButton" class="small-button">
+                ← HOME
+            </button>
+
+            <div class="level-title">
+
+                <small>PARADOX SYSTEM</small>
+
+                LEVEL
+                <span id="currentLevelText">1</span>
+
+            </div>
+
+            <div class="stats">
+
+                <span>
+                    MOVES
+                    <b id="movesText">0</b>
+                </span>
+
+                <span>
+                    TIME
+                    <b id="timeText">0</b>
+                </span>
+
+                <span>
+                    ♥
+                    <b id="livesText">3</b>
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="world-name" id="worldText">
+            ENERGY LAB
+        </div>
+
+
+        <div class="objective" id="objectiveText">
+            REACH THE BLUE CORE
+        </div>
+
+
+        <div class="level-info">
+
+            <span id="difficultyText">
+                DIFFICULTY: EASY
+            </span>
+
+            <span>
+                ♾ INFINITE
+            </span>
+
+        </div>
+
+
+        <div id="gameBoard" class="game-board"></div>
+
+
+        <div class="controls">
+
+            <button data-dir="up">▲</button>
+
+            <div>
+                <button data-dir="left">◀</button>
+                <button data-dir="down">▼</button>
+                <button data-dir="right">▶</button>
+            </div>
+
+        </div>
+
+
+        <p class="keyboard-hint">
+            USE ARROW KEYS OR WASD
+        </p>
+
+    </section>
+
+
+    <!-- ================= WIN ================= -->
+
+    <section id="winScreen" class="screen">
+
+        <div class="win-box">
+
+            <div class="win-symbol">
+                ✓
+            </div>
+
+            <p class="cleared-label">
+                SYSTEM ACCEPTED
+            </p>
+
+            <h1>
+                LEVEL CLEARED
+            </h1>
+
+            <p id="winMessage">
+                LEVEL 1 COMPLETED
+            </p>
+
+            <div class="stars" id="starsText">
+                ★ ★ ★
+            </div>
+
+            <div class="infinite-next">
+                ♾ THE NEXT LEVEL IS WAITING
+            </div>
+
+            <button id="nextLevelButton" class="main-button">
+                NEXT LEVEL →
+            </button>
+
+            <button id="winHomeButton" class="secondary-button">
+                HOME
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
